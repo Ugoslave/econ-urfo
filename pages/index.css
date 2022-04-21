@@ -1,3 +1,131 @@
 @import url('../vendor/normalize.css');
 @import url('../vendor/fonts/fonts.css');
 
+@import url('../blocks/page/page.css');
+
+@import url('../blocks/header/header.css');
+
+
+.page {
+  min-width: 320px;
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: 'Euclid Circular A', 'Arial', sans-serif;
+  background-color: #fff;
+  padding-bottom: 80px;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .page {
+    padding-bottom: 0;
+  }
+}
+
+
+.header {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  background-color: #575758;
+  display: flex;
+  font-family: 'Euclid Circular A';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+
+.header__list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ff3c00;
+}
+
+.header__item {
+  margin: 0;
+  height: 30px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header__item_position_link {
+  width: 30%;
+}
+
+.header__item_position_user {
+  width: 12%;
+  border-left: solid 2px #4b4c4d;
+}
+
+.header__item_position_user-balance {
+  width: 30%;
+  justify-content: flex-start;
+  border-left: solid 2px #7e8183;
+  border-right: solid 2px #7e8183;
+  padding-left: 20px;
+}
+
+.header__item_position_basket {
+  width: 4%;
+  border-left: solid 2px #7e8183;
+  border-right: solid 2px #7e8183;
+}
+
+.header__button {
+  margin: 0;
+  width: 150px;
+  height: 30px;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.header__button_type_exit-button {
+  width: 3%;
+}
+
+.header__icon {
+  width: 30px;
+  height: 30px;
+}
+
+.header__text {
+  padding-left: 10px;
+}
+
+.header__text_position_doc-number {
+  color: #fff;
+}
+
+.header__text_position_user-balance {
+  color: lime;
+}
+
+.header__link {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  text-align: center;
+}

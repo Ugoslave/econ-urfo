@@ -1,17 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Items for heating">
+  <meta name="description" content="personal data of user">
   <meta name="author" content="applicant">
   <link rel="stylesheet" href="./pages/index.css">
-  <title>Econ UrFO</title>
+  <title>Hosting Account</title>
 </head>
 <body>
   <div class="page">
     <header class="header">
-      <img src="./img/header-logo.svg" alt="Logo" class="header__logo">
+      <ul class="header__list">
+        <li class="header__item">
+          <button type="button" class="header__button">
+            <img src="./img/header-back-arrow.png" alt="Назад" class="header__icon">
+            <p class="header__text">главная</p>
+          </button>
+        </li>
+        <li class="header__item header__item_position_link">
+          <a href="#" lang="ru" class="header__link">партнерская программа</a>
+        </li>
+        <li class="header__item">
+          <img src="./img/header-doc-picture.png" alt="Номер договора" class="header__icon">
+          <p class="header__text header__text_position_doc-number">Д174181</p>
+        </li>
+        <li class="header__item header__item_position_user">Кусакина Людмила</li>
+        <li class="header__item header__item_position_user-balance">
+          <img src="./img/header-coin-picture.png" alt="Счет" class="header__icon">
+          <p class="header__text header__text_position_user-balance">Основной л/с: <span class="header__user-balance">204.02</span> руб.</p>
+        </li>
+        <li class="header__item">
+          <img src="./img/header-mail-picture.png" alt="Почта" class="header__icon">
+          <p class="header__text">0</p>
+        </li>
+        <li class="header__item header__item_position_basket">
+          <img src="./img/header-basket-picture.png" alt="Корзина" class="header__icon">
+          <p class="header__text">0</p>
+        </li>
+        <li class="header__item">
+          <button type="button" class="header__button header__button_type_exit-button">
+            <img src="./img/header-exit-picture.png" alt="Выход из аккаунта" class="header__icon">
+          </button>
+        </li>
+      </ul>
     </header>
     <main class="content">
 
