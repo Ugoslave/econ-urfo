@@ -129,3 +129,25 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+.content {
+  margin: 0;
+  border: solid 1px red;
+  padding: 30px;
+}
+
+table {
+  border: solid 1px green;
+}
+
+tr {
+  border: solid 1px green;
+}
+
+th {
+  border: solid 1px green;
+}
+
+td {
+  border: solid 1px green;
+}
