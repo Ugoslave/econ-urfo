@@ -132,7 +132,6 @@
 
 .content {
   margin: 0;
-  border: solid 1px red;
   padding: 30px;
   display: flex;
   align-items: center;
@@ -147,11 +146,11 @@
   list-style: none;
   padding: 0;
   display: flex;
+  box-sizing: border-box;
 }
 
 .data-list__menu {
   margin-right: 5%;
-  border: solid 1px green;
 }
 
 .data-list__menu-items {
@@ -228,36 +227,259 @@
 
 
 
+.data-list__table-container {
+
+}
+
+.data-list__title-box {
+  display: flex;
+}
+
+.data-list__title {
+  margin: 0;
+  font-family: 'Euclid Circular A';
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
 .data-list__title-icon {
+  width: 15px;
+  height: 15px;
+  background-color: orange;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  box-shadow: 1px 2px 2px #9a9b9c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.data-list__table {
+  border: solid 1px #9a9b9c;
+  box-shadow: 1px 5px 10px #4b4c4d;
+  border-radius: 10px;
+  width: 750px;
+  border-collapse: collapse;
+}
+
+.data-list__table-caption {
+  display: none;
+}
+
+
+.data-list__table-head {
+  background-color: #a9bcd4;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px #4b4c4d;
+  font-family: 'Euclid Circular A';
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.data-list__table-row:first-child {
+  text-align: center;
+}
+
+.data-list__table-link {
+  color: #000;
+  text-decoration: underline;
+  font-family: 'Euclid Circular A';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.data-list__table-link_active {
+  color: blue;
+  font-weight: 500;
+}
+
+.data-list__table-head-cell {
+  border: solid 1px #7d7f81;
+}
+
+.data-list__table-head-cell_title {
+  width: 20%;
+}
+
+.data-list__table-column-pic {
+  cursor: pointer;
+}
+
+.data-list__table-body-user-data {
+  background-color: #d7dce2;
+  border-bottom: solid 1px #7d7f81;
+}
+
+.data-list__table-user-cell {
+  border-right: solid 1px #7d7f81;
+  padding: 5px 10px;
+  font-family: 'Euclid Circular A';
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.data-list__table-user-cell_type_title {
+  font-weight: 600;
+  text-align: right;
+}
+
+
+
+
+.data-list__table-comment {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  font-family: 'Euclid Circular A';
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.data-list__table-comment-pic {
   width: 20px;
   height: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-table {
-  border: solid 1px green;
+.data-list__table-comment-input {
+  height: 20px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  border: 1px solid seagreen;
+  border-radius: 3px;
+  outline: none;
+  display: none;
 }
 
-tr {
-  border: solid 1px green;
+.data-list__table-comment-input_active {
+  display: block;
 }
 
-th {
-  border: solid 1px green;
+.data-list__table-comment-button {
+  border: solid 1px seagreen;
+  border-radius: 3px;
+  height: 20px;
+  width: 40px;
+  outline: none;
+  background-color: #a9bcd4;
+  color: mintcream;
+  font-weight: bold;
+  margin-left: 5px;
+  cursor: pointer;
+  text-align: center;
+  display: none;
 }
 
-td {
-  border: solid 1px green;
+.data-list__table-comment-button_active {
+  display: block;
+}
+
+.data-list__table-comment-text {
+  height: 20px;
+  max-width: 300px;
+  font-weight: normal;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.data-list__table-comment-text_disactive {
+  display: none;
+}
+
+.data-list__table-comment-link {
+  color: blue;
+}
+
+.data-list__table-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.data-list__table-password-pic {
+  width: 20px;
+  height: 20px;
+}
+
+.data-list__table-password {
+  height: 20px;
+  max-width: 100px;
+  font-weight: normal;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.data-list__table-domain-cell {
+  border-right: solid 1px #7d7f81;
+  font-family: 'Euclid Circular A';
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  padding-left: 10px;
+  color: blue;
+}
+
+.data-list__table-delete-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Euclid Circular A';
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000;
+}
+
+.data-list__table-domain-cell_type_title {
+  text-align: center;
+  vertical-align: top;
+  padding-top: 10px;
+  padding-left: 0;
+}
+
+.data-list__table-domain-cell_type_domain-title {
+  padding-top: 15px;
+}
+
+.data-list__domain-link {
+  text-decoration: none;
+  color: blue;
+}
+
+.data-list__table-delete-box {
+  padding: 0 20px 0 30px;
+}
+
+.data-list__table-delete-pic {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  box-shadow: 1px 2px 2px #9a9b9c;
+}
+
+
+
+
+.data-list__icons-container {
+  margin-left: 5%;
+  padding-top: 45px;
 }

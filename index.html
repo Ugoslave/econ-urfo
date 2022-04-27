@@ -143,148 +143,219 @@
             <h2 class="data-list__title">аккаунты хостинга</h2>
             <img src="./img/data-list-title-icon.svg" alt="Помощь" class="data-list__title-icon">
           </div>
+
           <table class="data-list__table">
 
-            <tr>
-              <td rowspan="2">Аккаунт</td>
-              <td colspan="4">Статистика</td>
-              <td rowspan="2">Состояние</td>
-              <td rowspan="2">Действия</td>
-            </tr>
+            <caption class="data-list__table-caption">аккаунты хостинга</caption>
 
-            <tr>
-              <td>Занято / Всего (Mb)</td>
-              <td>Cron</td>
-              <td>MySQL</td>
-              <td>FTP</td>
-            </tr>
+            <thead class="data-list__table-head">
+              <tr class="data-list__table-row">
+                <td rowspan="2" class="data-list__table-head-cell data-list__table-head-cell_title">Аккаунт</td>
+                <td colspan="4" class="data-list__table-head-cell data-list__table-head-cell_title">Статистика</td>
+                <td rowspan="2" class="data-list__table-head-cell data-list__table-head-cell_title">Состояние</td>
+                <td rowspan="2" class="data-list__table-head-cell data-list__table-head-cell_title">Действия</td>
+              </tr>
 
-            <tr>
-              <td>
-                <a href="#">srv164042(Бета-SSD)</a>
-              </td>
-              <td>675.01 / 7000</td>
-              <td>0</td>
-              <td>1</td>
-              <td>0</td>
-              <td>
-                <a href="#">включен</a>
-              </td>
-              <td>Cron</td>
-            </tr>
+              <tr class="data-list__table-row">
+                <td class="data-list__table-head-cell">Занято / Всего (Mb)</td>
+                <td class="data-list__table-head-cell">Cron</td>
+                <td class="data-list__table-head-cell">MySQL</td>
+                <td class="data-list__table-head-cell">FTP</td>
+              </tr>
+            </thead>
 
-            <tr>
-              <td>IP-адрес</td>
-              <td colspan="6">lljljlj</td>
-            </tr>
+            <tbody class="data-list__table-body-status-data">
+              <tr class="data-list__table-row">
+                <td class="data-list__table-head-cell">
+                  <a href="#" lang="ru" class="data-list__table-link">srv164042(Бета-SSD)</a>
+                </td>
+                <td class="data-list__table-head-cell">675.01 / 7000</td>
+                <td class="data-list__table-head-cell">0</td>
+                <td class="data-list__table-head-cell">1</td>
+                <td class="data-list__table-head-cell">0</td>
+                <td class="data-list__table-head-cell">
+                  <a href="#" lang="ru" class="data-list__table-link data-list__table-link_active">Включен</a>
+                </td>
+                <td class="data-list__table-head-cell">
+                  <img src="./img/data-list__table-column-pic.png" alt="Помощь" class="data-list__table-column-pic">
+                </td>
+              </tr>
 
-            <tr>
-              <td>Объем баз данных</td>
-              <td colspan="6">lljljlj</td>
-            </tr>
+            </tbody>
 
-            <tr>
-              <td>Объем почты</td>
-              <td colspan="6">lljljlj</td>
-            </tr>
+            <tbody class="data-list__table-body-user-data">
 
-            <tr>
-              <td>Объем файлов</td>
-              <td colspan="6">lljljlj</td>
-            </tr>
+              <tr>
+                <td class="data-list__table-user-cell data-list__table-user-cell_type_title">IP-адрес</td>
+                <td colspan="6" class="data-list__table-user-cell">lljljlj</td>
+              </tr>
 
-            <tr>
-              <td>Комментарий</td>
-              <td colspan="6">lljljlj</td>
-            </tr>
+              <tr class="data-list__table-row">
+                <td class="data-list__table-user-cell data-list__table-user-cell_type_title">Объем баз данных</td>
+                <td colspan="6" class="data-list__table-user-cell">lljljlj</td>
+              </tr>
 
-            <tr>
-              <td>Услуга</td>
-              <td colspan="6">lljljlj</td>
-            </tr>
+              <tr class="data-list__table-row">
+                <td class="data-list__table-user-cell data-list__table-user-cell_type_title">Объем почты</td>
+                <td colspan="6" class="data-list__table-user-cell">lljljlj</td>
+              </tr>
 
-            <tr>
-              <td>Логин</td>
-              <td colspan="6">lljljlj</td>
-            </tr>
+              <tr class="data-list__table-row">
+                <td class="data-list__table-user-cell data-list__table-user-cell_type_title">Объем файлов</td>
+                <td colspan="6" class="data-list__table-user-cell">lljljlj</td>
+              </tr>
 
-            <tr>
-              <td>Имя хоста FTP</td>
-              <td colspan="6">lljljlj</td>
-            </tr>
+              <tr class="data-list__table-row">
+                <td class="data-list__table-user-cell data-list__table-user-cell_type_title">Комментарий</td>
+                <td colspan="6" class="data-list__table-user-cell data-list__table-user-cell_type_comment">
+                  <div class="data-list__table-comment">
+                    <img src="./img/data-list-comment-cell.svg" alt="Комментарий" class="data-list__table-comment-pic">
+                    <input minlength="2" maxlength="70" name="comment" placeholder="Комментарий" class="data-list__table-comment-input data-list__table-comment-input_active" />
+                    <button type="button" class="data-list__table-comment-button data-list__table-comment-button_active">
+                      ОК
+                    </button>
+                    <p class="data-list__table-comment-text">
+                      Нет комментариев.
+                    </p>
+                      (<a href="#" lang="ru" class="data-list__table-comment-link">
+                        Изменить
+                      </a>)
+                  </div>
+                </td>
+              </tr>
 
-            <tr>
-              <td>Пароль FTP</td>
-              <td colspan="6">lljljlj</td>
-            </tr>
+              <tr class="data-list__table-row">
+                <td class="data-list__table-user-cell data-list__table-user-cell_type_title">Услуга</td>
+                <td colspan="6" class="data-list__table-user-cell">lljljlj</td>
+              </tr>
 
-            <tr>
-              <td>Имя хоста SSH</td>
-              <td colspan="6">lljljlj</td>
-            </tr>
+              <tr class="data-list__table-row">
+                <td class="data-list__table-user-cell data-list__table-user-cell_type_title">Логин</td>
+                <td colspan="6" class="data-list__table-user-cell">lljljlj</td>
+              </tr>
 
-            <tr>
-              <td>Паоль SSH</td>
-              <td colspan="6">lljljlj</td>
-            </tr>
+              <tr class="data-list__table-row">
+                <td class="data-list__table-user-cell data-list__table-user-cell_type_title">Имя хоста FTP</td>
+                <td colspan="6" class="data-list__table-user-cell">lljljlj</td>
+              </tr>
 
-            <tr>
-              <td>Имя хоста MySQL</td>
-              <td colspan="6">lljljlj</td>
-            </tr>
+              <tr class="data-list__table-row">
+                <td class="data-list__table-user-cell data-list__table-user-cell_type_title">Пароль FTP</td>
+                <td colspan="6" class="data-list__table-user-cell">
+                  <div class="data-list__table-comment">
+                    <button type="button" class="data-list__table-button">
+                      <img src="./img/data-list-password-cell.png" alt="Выключить" class="data-list__table-password-pic">
+                    </button>
+                    <p class="data-list__table-password">
+                      28982r0h0hf0r9er
+                    </p>
+                      (<a href="#" lang="ru" class="data-list__table-comment-link">
+                        Изменить
+                      </a>)
+                      (<a href="#" lang="ru" class="data-list__table-comment-link">
+                        Выключить
+                      </a>)
+                  </div>
+                </td>
+              </tr>
 
-            <tr>
-              <td>Имя хоста PgSQL</td>
-              <td colspan="6">lljljlj</td>
-            </tr>
+              <tr class="data-list__table-row">
+                <td class="data-list__table-user-cell data-list__table-user-cell_type_title">Имя хоста SSH</td>
+                <td colspan="6" class="data-list__table-user-cell">lljljlj</td>
+              </tr>
 
-            <tr>
-              <td rowspan="6">
-                <a href="#">Привязанные домены</a>
-              </td>
-              <td colspan="6">shoku-yoku.ru</td>
-            </tr>
+              <tr class="data-list__table-row">
+                <td class="data-list__table-user-cell data-list__table-user-cell_type_title">Паоль SSH</td>
+                <td colspan="6" class="data-list__table-user-cell">
+                  <div class="data-list__table-comment">
+                    <button type="button" class="data-list__table-button">
+                      <img src="./img/data-list-password-cell.png" alt="Выключить" class="data-list__table-password-pic">
+                    </button>
+                    <p class="data-list__table-password">
+                      28982r0h0hf0r9er
+                    </p>
+                      (<a href="#" lang="ru" class="data-list__table-comment-link">
+                        Изменить
+                      </a>)
+                      (<a href="#" lang="ru" class="data-list__table-comment-link">
+                        Выключить
+                      </a>)
+                  </div>
+                </td>
+              </tr>
 
-            <tr>
-              <td colspan="6">
-                <p>www.shoku-yoku.ru (alias)</p>
-                <button type="button">
-                  <img src="#" alt="Удалить" />
-                </button>
-              </td>
-            </tr>
+              <tr class="data-list__table-row">
+                <td class="data-list__table-user-cell data-list__table-user-cell_type_title">Имя хоста MySQL</td>
+                <td colspan="6" class="data-list__table-user-cell">lljljlj</td>
+              </tr>
 
-            <tr>
-              <td colspan="6">srv164042.hoster-test.ru</td>
-            </tr>
+              <tr class="data-list__table-row">
+                <td class="data-list__table-user-cell data-list__table-user-cell_type_title">Имя хоста PgSQL</td>
+                <td colspan="6" class="data-list__table-user-cell">lljljlj</td>
+              </tr>
+            </tbody>
 
-            <tr>
-              <td colspan="6">
-                <p>www.srv164042.hoster-test.ru (alias)</p>
-                <button type="button">
-                  <img src="#" alt="Удалить" />
-                </button>
-              </td>
-            </tr>
+            <tbody class="data-list__table-body-domains">
+              <tr>
+                <td rowspan="6" class="data-list__table-domain-cell data-list__table-domain-cell_type_title">
+                  <a href="#" lang="ru" class="data-list__table-link data-list__table-link_active">Привязанные домены</a>
+                </td>
+                <td colspan="6" class="data-list__table-domain-cell data-list__table-domain-cell_type_domain-title">
+                  <a href="#" lang="ru" class="data-list__domain-link">shoku-yoku.ru</a>
+                </td>
+              </tr>
 
-            <tr>
-              <td colspan="6">сёкуёку.рф</td>
-            </tr>
+              <tr class="data-list__table-row">
+                <td colspan="6" class="data-list__table-domain-cell">
+                  <div class="data-list__table-delete-box">
+                  <p>www.shoku-yoku.ru (alias)</p>
+                  <button type="button" class="data-list__table-button">
+                    <img src="./img/data-list-delete-btn.png" alt="Удалить" class="data-list__table-delete-pic" />
+                  </button>
+                  </div>
+                </td>
+              </tr>
 
-            <tr>
-              <td colspan="6">
-                <p>www.сёкуёку.рф (alias)</p>
-                <button type="button">
-                  <img src="#" alt="Удалить" />
-                </button>
-              </td>
-            </tr>
+              <tr class="data-list__table-row">
+                <td colspan="6" class="data-list__table-domain-cell">
+                  <a href="#" lang="ru" class="data-list__domain-link">srv164042.hoster-test.ru</a>
+                </td>
+              </tr>
 
+              <tr class="data-list__table-row">
+                <td colspan="6" class="data-list__table-domain-cell">
+                  <div class="data-list__table-delete-box">
+                  <p>www.srv164042.hoster-test.ru (alias)</p>
+                  <button type="button" class="data-list__table-button">
+                    <img src="./img/data-list-delete-btn.png" alt="Удалить" class="data-list__table-delete-pic" />
+                  </button>
+                </div>
+                </td>
+              </tr>
+
+              <tr class="data-list__table-row">
+                <td colspan="6" class="data-list__table-domain-cell">
+                  <a href="#" lang="ru" class="data-list__domain-link">сёкуёку.рф</a>
+                </td>
+              </tr>
+
+              <tr class="data-list__table-row">
+                <td colspan="6" class="data-list__table-domain-cell">
+                  <div class="data-list__table-delete-box">
+                  <p>www.сёкуёку.рф (alias)</p>
+                  <button type="button" class="data-list__table-button">
+                    <img src="./img/data-list-delete-btn.png" alt="Удалить" class="data-list__table-delete-pic" />
+                  </button>
+                </div>
+                </td>
+              </tr>
+
+            </tbody>
           </table>
         </li>
 
         <li class="data-list__icons-container">
-          <img src="#" alt="Условные обозначения" />
+          <img src="./img/data-list__icons-list.png" alt="Условные обозначения" class="data-list__table-icons-list" />
         </li>
       </ul>
 
