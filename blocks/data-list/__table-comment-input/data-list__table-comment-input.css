@@ -1,0 +1,9 @@
+.data-list__table-comment-input {
+  height: 20px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  border: 1px solid seagreen;
+  border-radius: 3px;
+  outline: none;
+  display: none;
+}

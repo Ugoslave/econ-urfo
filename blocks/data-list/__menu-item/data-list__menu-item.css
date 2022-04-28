@@ -1,0 +1,8 @@
+.data-list__menu-item {
+  height: 70px;
+  overflow: hidden;
+}
+
+.data-list__menu-item:nth-child(5n +2) {
+  height: 100px;
+}

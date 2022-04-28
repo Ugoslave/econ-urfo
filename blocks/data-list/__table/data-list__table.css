@@ -1,0 +1,7 @@
+.data-list__table {
+  border: solid 1px #9a9b9c;
+  box-shadow: 1px 5px 10px #4b4c4d;
+  border-radius: 10px;
+  width: 750px;
+  border-collapse: collapse;
+}

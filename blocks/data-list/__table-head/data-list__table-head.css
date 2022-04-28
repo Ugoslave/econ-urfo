@@ -1,0 +1,10 @@
+.data-list__table-head {
+  background-color: #a9bcd4;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px #4b4c4d;
+  font-family: 'Euclid Circular A';
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+}

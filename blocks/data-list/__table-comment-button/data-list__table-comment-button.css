@@ -1,0 +1,14 @@
+.data-list__table-comment-button {
+  border: solid 1px seagreen;
+  border-radius: 3px;
+  height: 20px;
+  width: 40px;
+  outline: none;
+  background-color: #a9bcd4;
+  color: mintcream;
+  font-weight: bold;
+  margin-left: 5px;
+  cursor: pointer;
+  text-align: center;
+  display: none;
+}

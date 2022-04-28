@@ -1,0 +1,11 @@
+.data-list__table-delete-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 30px;
+  font-family: 'Euclid Circular A';
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000;
+}

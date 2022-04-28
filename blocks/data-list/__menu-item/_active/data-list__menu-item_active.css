@@ -1,0 +1,4 @@
+.data-list__menu-item_active {
+  min-height: 230px;
+  overflow: visible;
+}

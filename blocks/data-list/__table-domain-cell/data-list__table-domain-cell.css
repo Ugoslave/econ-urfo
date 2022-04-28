@@ -1,0 +1,9 @@
+.data-list__table-domain-cell {
+  border-right: solid 1px #7d7f81;
+  font-family: 'Euclid Circular A';
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  padding-left: 10px;
+  color: blue;
+}

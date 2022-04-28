@@ -1,0 +1,9 @@
+.data-list__title {
+  margin: 0;
+  font-family: 'Euclid Circular A';
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}

@@ -1,0 +1,9 @@
+.data-list__item-text {
+  font-family: 'Euclid Circular A';
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  padding-left: 20px;
+  color: orange;
+  text-transform: uppercase;
+}

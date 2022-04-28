@@ -1,0 +1,9 @@
+.data-list__table-comment {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  font-family: 'Euclid Circular A';
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+}

@@ -1,0 +1,8 @@
+.data-list__table-link {
+  color: #000;
+  text-decoration: underline;
+  font-family: 'Euclid Circular A';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+}

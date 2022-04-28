@@ -1,0 +1,5 @@
+.data-list__item-box {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #7e8183;
+}

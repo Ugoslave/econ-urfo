@@ -1,0 +1,15 @@
+.header__button {
+  margin: 0;
+  width: 150px;
+  height: 30px;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
